@@ -1,0 +1,42 @@
+//RESPONSIVIDADE
+@mixin for-phone-only {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-portrait-up {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (max-width: 960px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up-width {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up-height {
+    @media (min-height: 720px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop-up {
+    @media (max-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin for-custom-screen($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}

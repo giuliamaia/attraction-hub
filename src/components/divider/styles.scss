@@ -1,0 +1,17 @@
+@use '../../utils/sass-utils/variables';
+
+.divider {
+    background-color: variables.$white-details;
+
+    &__vertical {
+        height: 40px;
+        width: 1px;
+        @extend .divider;
+    }
+
+    &__horizontal {
+        width: 100%;
+        height: 1px;
+        @extend .divider;
+    }
+}

@@ -1,0 +1,22 @@
+@use '../../utils/sass-utils/variables';
+
+.avatar {
+    display: flex;
+    align-items: center;
+    color: variables.$white-details;
+    font-weight: bold;
+
+    &__username {
+        margin-right: 10px;
+    }
+
+    &__picture {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: variables.$purple-details;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,7 @@
+@use '../../utils/sass-utils/variables';
+
+.link {
+    text-decoration: none;
+    color: variables.$purple-details;
+    font-size: 14px;
+}

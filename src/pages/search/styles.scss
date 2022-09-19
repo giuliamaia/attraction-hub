@@ -1,0 +1,17 @@
+@use '../../utils/sass-utils/variables';
+
+.search-page {
+    &__main {
+        height: calc(100vh - 80px);
+        width: 720px;
+        margin: auto;
+
+        &__title {
+            margin-top: 50px;
+            color: variables.$white-details;
+            &>p {
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+}

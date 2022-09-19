@@ -1,0 +1,13 @@
+@use '../../utils/sass-utils/variables';
+
+.search-input {
+    width: 100%;
+
+    & > input {
+        width: 600px;
+    }
+
+    & > span {
+        color: variables.$purple-details;
+    }
+}

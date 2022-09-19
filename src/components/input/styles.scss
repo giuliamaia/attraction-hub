@@ -1,0 +1,12 @@
+
+.input-container {
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    
+    & > input, > input:focus-visible {
+        border: none;
+        outline: none;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+}

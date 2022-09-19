@@ -1,0 +1,27 @@
+@use '../../utils/sass-utils/variables';
+
+.default {
+    background-color: variables.$purple-details;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    color: variables.$white-details;
+}
+
+.transparent {
+    background-color: transparent;
+    color: variables.$white-details;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+}
+
+.primary {
+    color: variables.$white-details;
+    background-color: variables.$purple-details;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+}

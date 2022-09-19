@@ -1,0 +1,11 @@
+@use './utils/sass-utils/variables';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: variables.$background-color;
+    margin: 0;
+}
