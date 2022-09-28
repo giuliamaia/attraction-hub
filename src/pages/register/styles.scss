@@ -13,22 +13,24 @@
             height: 360px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             align-items: center;
             padding: 20px;
             background-color: variables.$white-details;
             border-radius: 5px;
-    
+
             &__form {
                 width: 80%;
+                margin-top: 60px;
+
+                &__footer {
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
             }
-    
-            &__footer {
-                width: 80%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
+
+
         }
     }
 }
