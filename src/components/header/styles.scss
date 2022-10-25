@@ -9,11 +9,12 @@
     justify-content: space-around;
 
     &__buttons {
-        width: 150px;
+        width: 250px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         &--logged {
-            width: 220px;
+            width: 320px;
             @extend .header__buttons;
         }
     }

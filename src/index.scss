@@ -6,6 +6,6 @@
 }
 
 body {
-    background-color: variables.$background-color;
+    background-color: variables.$background-color !important;
     margin: 0;
 }

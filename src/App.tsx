@@ -1,11 +1,15 @@
 import './App.scss';
 import AppRoutes from './AppRoutes';
 import { collection, getDocs } from "firebase/firestore";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { db } from './utils/firebase/firebase-config'
+import { ColorScheme, ColorSchemeProvider, MantineProvider } from '@mantine/core';
 
 function App() {
   const userCollectionRef = collection(db, "users");
+  const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
+  const toggleColorScheme = (value?: ColorScheme) =>
+    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
 
   useEffect(() => {
     const getUsers = async () => {
@@ -15,7 +19,11 @@ function App() {
   }, []);
 
   return (
-    <AppRoutes />
+    <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
+      <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
+        <AppRoutes />
+      </MantineProvider>
+    </ColorSchemeProvider>
   );
 }
 
